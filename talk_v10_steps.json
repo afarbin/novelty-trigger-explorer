@@ -1,0 +1,834 @@
+{
+ "name": "Talk v10 steps",
+ "note": "HL-LHC curves are the twins of the deck's 350 kHz curves on the Level-1 stage rate-scaled to 327 kHz, the stage every other HL-LHC curve here uses.",
+ "views": [
+  {
+   "page": 9,
+   "step": 1,
+   "title": "Step 1, the trigger we have: raise the thresholds, or prescale",
+   "name": "Page 9, step 1: Step 1, the trigger we have",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-menu-prescaled.0",
+    "v3-menu-prescaled.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Run-3 recorded menu at its full rate (a horizontal line, no curve)",
+    "HL-LHC menu at its full rate on the 350 kHz stage (a horizontal line, no curve)",
+    "Embedding hash per family on Run 3 and per never-trained class on HL-LHC (thin grey curves behind the menu)",
+    "Embedding hash on H to aa to 4b alone, Run 3 (dashed grey curve)"
+   ],
+   "note": "The raised and prescaled menu on both samples, with the embedding hash per family drawn light behind them."
+  },
+  {
+   "page": 10,
+   "step": 1,
+   "title": "Step 1, hashing on the menu's inputs: the standard trigger is a hash with offsets",
+   "name": "Page 10, step 1: Step 1, hashing on the menu inputs",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-menu-hash-T6.imp.A-elem-hash-T6",
+    "r3-menu-hash.imp.A-menu-hash",
+    "v3-menu-hash.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "The menu-threshold hash against the raised menu on both samples. The Run-3 raised menu is read from the menu-hash study and equals the explorer curve; the Run-3 menu-threshold hashes and the two 350 kHz HL-LHC curves have no explorer curve (nearest for HL-LHC: the rate-scaled raised menu and menu-threshold hash)."
+  },
+  {
+   "page": 12,
+   "step": 1,
+   "title": "Step 2, a score: a density of the trigger's inputs catches less than the menu",
+   "name": "Page 12, step 1: Step 2, a density of the trigger inputs",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-tailq.0",
+    "r3-gauss-38.imp.A-gauss-unit-38",
+    "r3-gauss-38.imp.A-gauss-full-38",
+    "r3-gauss-57.imp.A-gauss-unit-57",
+    "r3-gauss-57.imp.A-gauss-full-57",
+    "v3-gauss-unit.0",
+    "v3-gauss-full.0",
+    "v3-rbm-fe.0",
+    "v3-gauss-lr.0",
+    "v3-tailq.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Background densities of the menu inputs against the raised menu, with the tail-plane hash of the previous step. The Run-3 Gaussians are not in the explorer; every HL-LHC curve is from the 350 kHz stage, whose rate-scaled twins are the explorer curves of the same names."
+  },
+  {
+   "page": 13,
+   "step": 1,
+   "title": "Step 2, hashing on the menu inputs: random and data-set planes",
+   "name": "Page 13, step 1: Step 2, random and data-set planes",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-random-wh.0",
+    "r3-tailq.0",
+    "v3-random-origin.0",
+    "r3-menu-hash-T6.imp.A-elem-hash-T6",
+    "v3-tailq.0",
+    "v3-menu-hash.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Random planes and tail-quantile planes on the menu inputs against the raised menu. The HL-LHC random-plane curve is the 350 kHz whitened 10-bit curve; the other HL-LHC curves are 350 kHz curves with only rate-scaled twins in the explorer."
+  },
+  {
+   "page": 15,
+   "step": 1,
+   "title": "Step 3, hashing on the menu inputs: signal places the planes, rarity decides",
+   "name": "Page 15, step 1: Step 3, signal places the planes",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-csel.0",
+    "r3-backfit-conv.bf",
+    "r3-boost.mm.boost",
+    "r3-clf-G.0",
+    "v3-menu-raised.ts.p1.sa",
+    "v3-ts-greedy.ts.p1.sa",
+    "v3-ts-backfit.ts.p1.sa",
+    "v3-ts-boost.ts.p1.sa",
+    "v3-ts-clf.ts.p1.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Planes chosen with signal (one at a time, refitted, boosted) beside the signal-trained classifier and the raised menu. Run 3 is cut on the held-out half; HL-LHC planes are chosen on the trained classes and scored on the 19 never-trained ones."
+  },
+  {
+   "page": 16,
+   "step": 1,
+   "title": "Step 3, a score: train on signal, and its price",
+   "name": "Page 16, step 1: Step 3, a score trained on signal",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-csel.0",
+    "r3-clf-G.0",
+    "v3-dnnmc-maxlr.0",
+    "v3-greedy.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "The supervised classifier against the chosen planes and the raised menu. On HL-LHC the raised menu and the chosen planes are 350 kHz curves; the nearest explorer curves are their rate-scaled twins."
+  },
+  {
+   "page": 18,
+   "step": 1,
+   "title": "Step 4, a score: what AXOL1TL buys over the menu",
+   "name": "Page 18, step 1: Step 4, what AXOL1TL buys over the menu",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-axol1tl.0",
+    "v3-ae.sa",
+    "v3-menu-raised.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "AXOL1TL on H to aa to 4b alone, Run 3",
+    "Run-3 recorded menu at its full rate (a horizontal line, no curve)",
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "AXOL1TL and the raised menu on Run 3; the retrained autoencoder and the raised menu on HL-LHC. The autoencoder curve is read from the headline ratio product and equals the explorer curve."
+  },
+  {
+   "page": 20,
+   "step": 1,
+   "title": "Step 4, hashing on the embedding with random planes: both samples",
+   "name": "Page 20, step 1: Step 4, the embedding hash on both samples",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-axol1tl.0",
+    "r3-emb-C.0",
+    "v3-menu-raised.0",
+    "v3-ae.sa",
+    "v3-emb-ladder.sa",
+    "r3-axo-repr-hash.imp.white.b16-T20.mean-log"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Run-3 recorded menu at its full rate (a horizontal line, no curve)",
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "The embedding hash with random planes against the menu, AXOL1TL and the autoencoder. The HL-LHC embedding hash is read from the headline both-matchings product and equals the explorer headline curve."
+  },
+  {
+   "page": 21,
+   "step": 1,
+   "title": "Step 4 on the embedding: fitted densities are level with hashing at 5 % on both samples",
+   "name": "Page 21, step 1: Step 4, fitted densities beside hashing",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-emb-C.den",
+    "r3-emb-gauss.den",
+    "r3-emb-gmm.den",
+    "r3-emb-knn.den",
+    "r3-emb-kde.den",
+    "v3-emb-random-capA.opt.hash-random.sa",
+    "v3-emb-gauss-capA.opt.gauss.sa",
+    "v3-emb-gmm-capA.opt.gmm-K8.sa",
+    "v3-emb-knn-capA.opt.knn-k128.sa",
+    "v3-emb-kern-capA.opt.kern-b22.sa"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Fitted densities of the embedding beside hashing with random planes: Gaussian, mixture, nearest neighbours and a kernel density on Run 3, and the angular kernel at 22 bits on HL-LHC. No menu curve is drawn."
+  },
+  {
+   "page": 23,
+   "step": 1,
+   "title": "The embedding hash on HL-LHC simulation: novelty alone passes the standard trigger",
+   "name": "Page 23, step 1: HL-LHC, novelty alone passes the standard",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-ladder.sa"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Embedding hash with every line rate scaled without a cap (range of the Level-1 matching)",
+    "Embedding hash with the thresholds matched (range of the Level-1 matching)",
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "Novelty alone on HL-LHC with the range over the Level-1 matching and the standard trigger at its full rate. The two matching variants have no explorer curve."
+  },
+  {
+   "page": 25,
+   "step": 1,
+   "title": "Step 5, planes chosen on the embedding: a small further gain",
+   "name": "Page 25, step 1: Step 5, planes chosen on the embedding",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-emb-D-csel.1",
+    "r3-emb-D-csel.0",
+    "v3-emb-random-capA.opt.hash-random.sa",
+    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Planes chosen on the embedding against random planes on the same footing and the raised menu. Run 3 is cut on the held-out half; HL-LHC is the 350 kHz stage, where only the raised menu lacks an explorer curve."
+  },
+  {
+   "page": 26,
+   "step": 1,
+   "title": "Step 5 on HL-LHC: chosen planes held out, beside the Gaussian density of the embedding",
+   "name": "Page 26, step 1: Step 5 held out, as the only trigger",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.sa",
+    "v3-emb-random-capB.opt.hash-random-convB.sa",
+    "v3-emb-gauss-capA.opt.gauss.sa"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Left panel: held-out chosen planes, random planes on the same footing and the full-covariance Gaussian, each as the only trigger. The legend also carries an empty placeholder for covariance planes; no curve is drawn for it."
+  },
+  {
+   "page": 26,
+   "step": 2,
+   "title": "Step 5 on HL-LHC: chosen planes held out, beside the Gaussian density of the embedding",
+   "name": "Page 26, step 2: Step 5 held out, as a complement",
+   "mode": "ratematched",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.rm",
+    "v3-emb-random-capB.opt.hash-random-convB.rm",
+    "v3-emb-gauss-capA.opt.gauss.rm"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Right panel: the same three options as a complement, the standard trigger at (1 − f) plus the option at f. The covariance-plane placeholder in the legend draws nothing."
+  },
+  {
+   "page": 27,
+   "step": 1,
+   "title": "Step 5 without signal: the background covariance does not place the planes",
+   "name": "Page 27, step 1: Step 5 without signal, the only trigger",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-random-capB.cov.random.sa",
+    "v3-emb-chosen-capB.cov.chosen.sa",
+    "v3-emb-gauss-capB.cov.gauss.sa",
+    "v3-cov-sinv-tail.cov.sinv-tail.sa",
+    "v3-cov-iso-tail.cov.iso-tail.sa"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Left panel: covariance-guided planes and random directions with tail offsets against random planes, signal-chosen planes and the Gaussian density, as the only trigger. The deck reads the plot data of the covariance study; the values equal the explorer curves."
+  },
+  {
+   "page": 27,
+   "step": 2,
+   "title": "Step 5 without signal: the background covariance does not place the planes",
+   "name": "Page 27, step 2: Step 5 without signal, as a complement",
+   "mode": "ratematched",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-random-capB.cov.random.rm",
+    "v3-emb-chosen-capB.cov.chosen.rm",
+    "v3-emb-gauss-capB.cov.gauss.rm",
+    "v3-cov-sinv-tail.cov.sinv-tail.rm",
+    "v3-cov-iso-tail.cov.iso-tail.rm"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "Right panel: the same five options as a complement at (1 − f), with the standard trigger alone at its full rate as a line."
+  },
+  {
+   "page": 31,
+   "step": 1,
+   "title": "Novelty added beside the menu: the complement, both samples",
+   "name": "Page 31, step 1: The complement at (1 − f), both samples",
+   "mode": "ratematched",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-random-capA.opt.hash-random.rm"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Run 3: the menu tightened to (1 − f) plus the embedding hash at f",
+    "Run-3 recorded menu at its full rate (a horizontal line, no curve)",
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "The configuration proposed: the standard trigger at (1 − f) plus novelty at f. The HL-LHC curve is read from the headline both-matchings product and equals the random-plane options curve of the explorer; the Run-3 complement has no explorer curve."
+  },
+  {
+   "page": 31,
+   "step": 2,
+   "title": "Novelty added beside the menu: the complement, both samples",
+   "name": "Page 31, step 2: The menu kept whole plus novelty",
+   "mode": "additive",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-ladder.ad"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Run 3: the menu kept whole plus the embedding hash at f",
+    "Run 3: the menu kept whole plus AXOL1TL at f (two points, 1 and 5 %)"
+   ],
+   "note": "The menu kept whole plus novelty at f, (100 + f) % of the rate. Only the HL-LHC additive curve is in the explorer."
+  },
+  {
+   "page": 31,
+   "step": 3,
+   "title": "Novelty added beside the menu: the complement, both samples",
+   "name": "Page 31, step 3: Novelty alone and the raised menu",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-emb-C.0",
+    "v3-menu-raised.0",
+    "v3-emb-ladder.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "The reference curves on the same page: novelty alone and the raised menu on both samples. The Run-3 novelty-alone curve is read from the complement study and equals the explorer embedding hash."
+  },
+  {
+   "page": 32,
+   "step": 1,
+   "title": "Unique capture: what the novelty trigger keeps that the standard trigger never does",
+   "name": "Page 32, step 1: Unique capture against the menu",
+   "mode": "unique",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-menu-hash.unq.step1.menu-menu-hash.unique-raised",
+    "v3-menu-hash.unq.step1.menu-menu-hash.unique-full",
+    "v3-emb-chosen-capB.unq.step5.emb-hash-chosen-cap-convB.unique-full"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Chosen embedding planes: unique against the prescaled menu at the same rate"
+   ],
+   "note": "Unique capture of the menu-threshold hash and of the planes chosen on the embedding, against the raised menu and the menu at its full rate. The unique share against the prescaled menu is not in the explorer."
+  },
+  {
+   "page": 32,
+   "step": 2,
+   "title": "Unique capture: what the novelty trigger keeps that the standard trigger never does",
+   "name": "Page 32, step 2: Total capture beside the unique share",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-menu-hash.0",
+    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.sa"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "The total capture drawn beside each unique curve. The deck reads it from the unique-capture study; the values equal the explorer curves named here."
+  },
+  {
+   "page": 32,
+   "step": 3,
+   "title": "Unique capture: what the novelty trigger keeps that the standard trigger never does",
+   "name": "Page 32, step 3: Complement, occupancy on the rejects",
+   "mode": "ratematched",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.rm",
+    "v3-emb-chosen-capB.unq.step5.emb-hash-chosen-cap-convB.rejocc"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "Chosen embedding planes as a complement at (1 − f), with the cell occupancy counted on all events and on the events the standard trigger rejects."
+  },
+  {
+   "page": 33,
+   "step": 1,
+   "title": "HL-LHC simulation: any rate given to novelty raises the capture",
+   "name": "Page 33, step 1: HL-LHC, the complement at (1 − f)",
+   "mode": "ratematched",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-random-capA.opt.hash-random.rm"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "Left panel: the standard trigger at (1 − f) plus novelty at f. The curve is read from the headline both-matchings product and equals the random-plane options curve of the explorer."
+  },
+  {
+   "page": 33,
+   "step": 2,
+   "title": "HL-LHC simulation: any rate given to novelty raises the capture",
+   "name": "Page 33, step 2: HL-LHC, novelty alone",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-ladder.sa"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Embedding hash with every line rate scaled without a cap (range of the Level-1 matching)",
+    "Embedding hash with the thresholds matched (range of the Level-1 matching)",
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "Right panel: novelty alone, with the range over the Level-1 matching. The two matching variants have no explorer curve."
+  },
+  {
+   "page": 44,
+   "step": 1,
+   "title": "Step 3 on HL-LHC: both held-out protocols for the menu-input planes",
+   "name": "Page 44, step 1: Step 3 on HL-LHC, both held-out protocols",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-menu-raised.ts.p1.sa",
+    "v3-ts-greedy.ts.p1.sa",
+    "v3-ts-backfit.ts.p1.sa",
+    "v3-ts-boost.ts.p1.sa",
+    "v3-ts-clf.ts.p1.sa",
+    "v3-ts-greedy.ts.p2.sa",
+    "v3-ts-backfit.ts.p2.sa",
+    "v3-ts-boost.ts.p2.sa",
+    "v3-ts-clf.ts.p2.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Two HL-LHC panels: planes chosen on the trained classes and tested on the 19 never-trained ones, and planes chosen on the trained and held-out classes and tested on the 7 sealed ones. The second panel has no raised-menu curve."
+  },
+  {
+   "page": 46,
+   "step": 1,
+   "title": "Step 4, hashing on a learned representation: AXOL1TL's own features",
+   "name": "Page 46, step 1: Step 4, hashing on AXOL1TL's features",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-clf-G.0",
+    "r3-axol1tl.0",
+    "v3-ae.sa",
+    "v3-menu-raised.0",
+    "r3-axo-repr-hash.imp.white.b16-T20.mean-log"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "AXOL1TL against hashing on its own features on Run 3; the retrained autoencoder on HL-LHC. Hashing on AXOL1TL's features has no explorer curve."
+  },
+  {
+   "page": 47,
+   "step": 1,
+   "title": "Step 4, hashing on a learned representation: the classifier's probability sphere",
+   "name": "Page 47, step 1: Step 4, hashing on the classifier sphere",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-dnnmc-maxlr.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "Hash with one plane on the classifier's background axis (band over four trainings)",
+    "Hash with random planes on the probability sphere (band over four trainings)"
+   ],
+   "note": "Hashing on the classifier probability sphere beside the classifier and the raised menu, every other configuration in grey behind. The two sphere bands are not in the explorer; the raised menu is the 350 kHz curve."
+  },
+  {
+   "page": 50,
+   "step": 1,
+   "title": "The same machinery at Level 1 and at the HLT",
+   "name": "Page 50, step 1: Run 3, novelty at the first, second or both stages",
+   "mode": "standalone",
+   "panels": [
+    "R3"
+   ],
+   "sel": [],
+   "std": false,
+   "x": [
+    0.7,
+    150
+   ],
+   "missing": [
+    "Novelty at the first stage, mean of the 19 families",
+    "Novelty at the second stage, mean of the 19 families",
+    "Novelty at both stages, mean of the 19 families",
+    "H to aa to 4b apart, at each of the three stages",
+    "Today's trigger at both stages (horizontal lines, 19 families and H to aa to 4b)"
+   ],
+   "note": "Run 3 efficiency at the final output with novelty at Level 1, at the second stage or at both, each against its own budget. None of these curves is in the explorer."
+  },
+  {
+   "page": 50,
+   "step": 2,
+   "title": "The same machinery at Level 1 and at the HLT",
+   "name": "Page 50, step 2: HL-LHC, the crossing of the standard trigger",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-ladder.sa"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "Novelty alone on HL-LHC with the band where it crosses the standard trigger at its full rate."
+  },
+  {
+   "page": 58,
+   "step": 1,
+   "title": "Three decision rules measured on one stage, and what each must know",
+   "name": "Page 58, step 1: Three decision rules on one stage",
+   "mode": "standalone",
+   "panels": [
+    "HL"
+   ],
+   "sel": [
+    "v3-menu-raised.0",
+    "v3-ae.sa",
+    "v3-emb-ladder.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "A threshold rule (the raised menu), a frozen density approximation (the autoencoder) and the live density in the embedding (hashing) on HL-LHC."
+  },
+  {
+   "page": 72,
+   "step": 1,
+   "title": "CMS Run 3 open data: novelty at Level-1, at the second stage, or at both",
+   "name": "Page 72, step 1: Run 3, novelty at Level 1, second stage or both",
+   "mode": "standalone",
+   "panels": [
+    "R3"
+   ],
+   "sel": [],
+   "std": false,
+   "x": [
+    0.7,
+    150
+   ],
+   "missing": [
+    "Novelty at the first stage, mean of the 19 families",
+    "Novelty at the second stage, mean of the 19 families",
+    "Novelty at both stages, mean of the 19 families",
+    "H to aa to 4b apart, at each of the three stages",
+    "Today's trigger at both stages (horizontal lines, 19 families and H to aa to 4b)"
+   ],
+   "note": "The same three-stage Run-3 figure as page 50 at full width. None of these curves is in the explorer."
+  },
+  {
+   "page": 83,
+   "step": 1,
+   "title": "The autoencoder: a good anomaly score, a poor trigger at a budget",
+   "name": "Page 83, step 1: The autoencoder, a poor trigger at a budget",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-raised.0",
+    "r3-axol1tl.0",
+    "r3-emb-C.0",
+    "v3-emb-ladder.sa",
+    "v3-ae.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [
+    "HL-LHC standard trigger alone at its full rate (a horizontal line, no curve)"
+   ],
+   "note": "Occupancy scoring on the embedding against AXOL1TL and the menu on Run 3, and against the retrained autoencoder on HL-LHC."
+  },
+  {
+   "page": 86,
+   "step": 1,
+   "title": "Beside the published CMS Level-1 anomaly triggers",
+   "name": "Page 86, step 1: Beside the published Level-1 anomaly triggers",
+   "mode": "standalone",
+   "panels": [
+    "R3"
+   ],
+   "sel": [],
+   "std": false,
+   "x": null,
+   "missing": [
+    "AXOL1TL published efficiency against 2024 zero-bias data",
+    "CICADA published efficiency against 2024 zero-bias data",
+    "Published curves against zero-bias simulation (dashed)",
+    "Occupancy scoring against recorded zero bias (band over three encoders)",
+    "Occupancy scoring against simulated single-neutrino crossings",
+    "Autoencoder against recorded zero bias, three trainings, with points at 5, 10 and 100 %",
+    "The published Level-1 menu and the rebuilt Level-1 menu (single points)"
+   ],
+   "note": "Signal efficiency for two Higgs processes against the rate as a share of each experiment's own Level-1 rate, on a ported picture. None of these curves is in the explorer; the axis is not the explorer budget axis."
+  },
+  {
+   "page": 106,
+   "step": 1,
+   "title": "Run 3, the refit run to convergence: optimism, and the rate carried across halves",
+   "name": "Page 106, step 1: Run 3, the refit run to convergence",
+   "mode": "standalone",
+   "panels": [
+    "R3"
+   ],
+   "sel": [
+    "r3-csel.bf",
+    "r3-backfit-2sweeps.bf",
+    "r3-backfit-conv.bf"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "missing": [],
+   "note": "Planes chosen one at a time, refitted for two sweeps and refitted to convergence, on the held-out half of Run 3."
+  }
+ ]
+}

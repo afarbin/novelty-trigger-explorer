@@ -1,0 +1,320 @@
+{
+ "name": "Talk steps (Amir 10-31)",
+ "note": "Steps in the order of the tree; Run 3 left, HL-LHC right.",
+ "views": [
+  {
+   "name": "1.1: the trigger we have",
+   "note": "The standard trigger with its thresholds raised to the budget, and the same trigger prescaled. The HL-LHC prescaled menu exists only on the 350 kHz Level-1 stage.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-prescaled.0",
+    "v3-menu-prescaled.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": []
+  },
+  {
+   "name": "1.2: hashing without physics or signal",
+   "note": "Random planes on the trigger's quantities do not work and are drawn as a reference; planes placed at the tails of the background distributions are the best hashing that uses neither physics nor signal.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-random-wh.0",
+    "v3-random-origin.0",
+    "r3-tailq.0",
+    "v3-tailq.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [
+    "r3-random-wh.0",
+    "v3-random-origin.0"
+   ],
+   "missing": []
+  },
+  {
+   "name": "1.3: hashing with physics placing the planes",
+   "note": "Hashing with the planes at the menu's own thresholds: physics places the planes. On Run 3, six tables, one per object type.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-menu-hash-T6.imp.A-elem-hash-T6",
+    "v3-menu-hash.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": []
+  },
+  {
+   "name": "2.1: a fitted density of the trigger's quantities",
+   "note": "A Gaussian with its full covariance fitted to the trigger's quantities, beside tail-quantile hashing.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-gauss-38.imp.A-gauss-full-38",
+    "v3-gauss-full.0",
+    "r3-tailq.0",
+    "v3-tailq.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": []
+  },
+  {
+   "name": "3.1: a score that is not a density, as references",
+   "note": "Scores that do not estimate the background density: an autoencoder or AXOL1TL, and a classifier trained on signal. Drawn as references.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-axol1tl.0",
+    "v3-ae.sa",
+    "r3-clf-G.0",
+    "v3-crbm-score.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": []
+  },
+  {
+   "name": "3.2: signal placing the planes on the trigger's quantities",
+   "note": "Hashing with planes chosen with known signals, refitted, or boosted across tables, the best of each; the classifier is the reference.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-joint.mm.joint",
+    "v3-tree.0",
+    "r3-backfit-conv.bf",
+    "v3-backfit.0",
+    "r3-boost.mm.boost",
+    "v3-boost.0",
+    "r3-clf-G.0",
+    "v3-crbm-score.0"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": []
+  },
+  {
+   "name": "4.1: a fitted density of a learned representation",
+   "note": "The best fitted density on each learned representation: an autoencoder's latent or AXOL1TL's, a classifier's output, a contrastive embedding.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-axo-repr-gauss.nh.nohaa-axo-gauss-mu",
+    "r3-emb-knn.den",
+    "v3-emb-gmm-capA.opt.gmm-K8.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": [
+    "autoencoder or AXOL1TL latent, HL-LHC: not run on HL-LHC",
+    "classifier output, Run 3: the classifier output was not run with this decision rule standalone",
+    "classifier output, HL-LHC: the classifier output was not run with this decision rule standalone"
+   ]
+  },
+  {
+   "name": "4.2: hashing on a learned representation without signal",
+   "note": "Hashing on each learned representation with planes that use no signal: random or tail-quantile planes, or planes from the covariance.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-axo-repr-hash.imp.white.b16-T20.mean-log",
+    "r3-emb-C.r3c.standalone",
+    "v3-emb-ladder.c16x80.sa",
+    "v3-cov-sinv-tail.cov.sinv-tail.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": [
+    "autoencoder or AXOL1TL latent, HL-LHC: not run on HL-LHC",
+    "classifier output, Run 3: not run on Run 3",
+    "classifier output, HL-LHC: hashing on the classifier output has no standalone curve",
+    "contrastive embedding, covariance planes, Run 3: not run on Run 3"
+   ]
+  },
+  {
+   "name": "4.3: hashing on a learned representation with signal placing the planes",
+   "note": "Hashing on the contrastive embedding with planes chosen with known signals.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-emb-D-csel.0",
+    "v3-emb-chosen-capB.cov.chosen.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": [
+    "classifier output, chosen planes, Run 3: not run on Run 3",
+    "classifier output, chosen planes, HL-LHC: hashing on the classifier output has no standalone curve"
+   ]
+  },
+  {
+   "name": "4.4: unique capture: what the standard trigger does not take",
+   "note": "The capture the standard trigger does not make: beyond it at its full rate, and beyond the raised menu at the same rate; never against the prescaled menu. On Run 3 both are measured for hashing on the contrastive embedding; on HL-LHC the embedding has the full-rate comparison only, the same-rate one against the raised menu is not yet measured there.",
+   "mode": "unique",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "v3-menu-hash.unq.step1.menu-menu-hash.unique-full",
+    "v3-menu-hash.unq.step1.menu-menu-hash.unique-raised",
+    "v3-tailq.unq.step2.menu-tailq-hash.unique-full",
+    "v3-tailq.unq.step2.menu-tailq-hash.unique-raised",
+    "v3-backfit.unq.step5.menu-m1-backfit.unique-full",
+    "v3-backfit.unq.step5.menu-m1-backfit.unique-raised",
+    "r3-emb-C.r3c.unique-full",
+    "v3-emb-random-capB.unq.step5.emb-hash-random-convB.unique-full",
+    "r3-emb-C.r3c.unique-same",
+    "v3-emb-chosen-capB.unq.step5.emb-hash-chosen-cap-convB.unique-full"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": [
+    "Run 3: pending, the unique capture is not yet measured on this sample",
+    "embedding, no signal, beyond the raised menu, HL-LHC: the same-rate comparison against the raised menu is not yet measured for the embedding",
+    "embedding, chosen planes, beyond the raised menu, HL-LHC: the same-rate comparison against the raised menu is not yet measured for the embedding"
+   ]
+  },
+  {
+   "name": "5.1: the complement: the menu at (1 − f) and novelty at f",
+   "note": "The standard trigger keeps (1 − f) of the rate and novelty takes f; the capture of the two together.",
+   "mode": "ratematched",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "v3-tailq.grid.tailq-hash",
+    "r3-emb-C.r3c.rejocc",
+    "v3-emb-random-capA.opt.hash-random.rm",
+    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.rm"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": [
+    "tail-quantile hashing on the trigger's quantities, Run 3: not run on Run 3",
+    "hashing on the contrastive embedding, chosen planes, Run 3: not run on Run 3"
+   ]
+  },
+  {
+   "name": "5.2: the menu kept whole plus novelty",
+   "note": "The standard trigger at its full rate plus novelty at f on top.",
+   "mode": "additive",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "v3-emb-ladder.ad",
+    "v3-ae.ad"
+   ],
+   "std": false,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": [
+    "hashing on the contrastive embedding, Run 3: not run on Run 3",
+    "autoencoder, Run 3: not run on Run 3"
+   ]
+  },
+  {
+   "name": "6.1: conclusion",
+   "note": "The raised menu, the best hashing without physics or signal, and the best hashing on the contrastive embedding without and with signal.",
+   "mode": "standalone",
+   "panels": [
+    "R3",
+    "HL"
+   ],
+   "sel": [
+    "r3-tailq.0",
+    "v3-tailq.0",
+    "r3-emb-C.r3c.standalone",
+    "v3-emb-ladder.c16x80.sa",
+    "r3-emb-D-csel.0",
+    "v3-emb-chosen-capB.cov.chosen.sa"
+   ],
+   "std": true,
+   "x": [
+    0.07,
+    150
+   ],
+   "reference_on": [],
+   "missing": []
+  }
+ ]
+}
