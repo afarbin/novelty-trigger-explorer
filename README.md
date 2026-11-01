@@ -32,7 +32,8 @@ read the numbers directly.
   recorded Level-1 accept rate.
 - **Hashing cell.** Choose a cell for each sample. Every hashing curve then switches to its measurement at that cell, and a study
   with no measurement there is named as "not measured at this cell".
-  - HL-LHC opens at the 14 x 20 cell, with 16 x 80 beside it. 22 x 80 was the earlier cell.
+  - HL-LHC opens at the 14 x 20 cell, with 16 x 80 beside it; 8 x 4 is also selectable for the embedding hashing. 22 x 80 was the earlier cell.
+  - The talk steps draw the embedding hashing at 14 x 20 with 16 x 80 beside it. The additive mode is measured only at 22 x 80, and its step says so.
   - Run 3 opens at 16 x 20.
 - **Every number has its error.** The error bar combines the binomial error on the signal probes with the uncertainty of the cut,
   which comes from bootstrapping the background tail. The spread over encoder trainings and plane draws is printed beside it, and

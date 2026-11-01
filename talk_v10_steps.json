@@ -211,7 +211,8 @@
     "r3-emb-C.0",
     "v3-menu-raised.0",
     "v3-ae.sa",
-    "v3-emb-ladder.sa",
+    "v3-emb-ladder.c14x20.sa",
+    "v3-emb-ladder.c16x80.sa",
     "r3-axo-repr-hash.imp.white.b16-T20.mean-log"
    ],
    "std": true,
@@ -241,7 +242,8 @@
     "r3-emb-gmm.den",
     "r3-emb-knn.den",
     "r3-emb-kde.den",
-    "v3-emb-random-capA.opt.hash-random.sa",
+    "v3-emb-random-capA.ct.14x20.sa",
+    "v3-emb-random-capA.ct.16x80.sa",
     "v3-emb-gauss-capA.opt.gauss.sa",
     "v3-emb-gmm-capA.opt.gmm-K8.sa",
     "v3-emb-knn-capA.opt.knn-k128.sa",
@@ -265,7 +267,8 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-ladder.sa"
+    "v3-emb-ladder.c14x20.sa",
+    "v3-emb-ladder.c16x80.sa"
    ],
    "std": false,
    "x": [
@@ -293,8 +296,11 @@
     "r3-menu-raised.0",
     "r3-emb-D-csel.1",
     "r3-emb-D-csel.0",
-    "v3-emb-random-capA.opt.hash-random.sa",
-    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.sa"
+    "v3-emb-random-capA.ct.14x20.sa",
+    "v3-emb-random-capA.ct.16x80.sa",
+    "v3-emb-chosen-capB.ec14.p1.sa",
+    "v3-emb-chosen-capB.ct.14x20.sa",
+    "v3-emb-chosen-capB.ct.16x80.sa"
    ],
    "std": true,
    "x": [
@@ -314,8 +320,12 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.sa",
-    "v3-emb-random-capB.opt.hash-random-convB.sa",
+    "v3-emb-chosen-capB.ec14.p1.sa",
+    "v3-emb-chosen-capB.ct.14x20.sa",
+    "v3-emb-chosen-capB.ct.16x80.sa",
+    "v3-emb-random-capB.ec14.p1.sa",
+    "v3-emb-random-capB.ct.14x20.sa",
+    "v3-emb-random-capB.ct.16x80.sa",
     "v3-emb-gauss-capA.opt.gauss.sa"
    ],
    "std": false,
@@ -336,8 +346,12 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.rm",
-    "v3-emb-random-capB.opt.hash-random-convB.rm",
+    "v3-emb-chosen-capB.ec14.p1.rm",
+    "v3-emb-chosen-capB.ct.14x20.rm",
+    "v3-emb-chosen-capB.ct.16x80.rm",
+    "v3-emb-random-capB.ec14.p1.rm",
+    "v3-emb-random-capB.ct.14x20.rm",
+    "v3-emb-random-capB.ct.16x80.rm",
     "v3-emb-gauss-capA.opt.gauss.rm"
    ],
    "std": false,
@@ -358,8 +372,12 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-random-capB.cov.random.sa",
-    "v3-emb-chosen-capB.cov.chosen.sa",
+    "v3-emb-random-capB.ec14.p1.sa",
+    "v3-emb-random-capB.ct.14x20.sa",
+    "v3-emb-random-capB.ct.16x80.sa",
+    "v3-emb-chosen-capB.ec14.p1.sa",
+    "v3-emb-chosen-capB.ct.14x20.sa",
+    "v3-emb-chosen-capB.ct.16x80.sa",
     "v3-emb-gauss-capB.cov.gauss.sa",
     "v3-cov-sinv-tail.cov.sinv-tail.sa",
     "v3-cov-iso-tail.cov.iso-tail.sa"
@@ -382,8 +400,12 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-random-capB.cov.random.rm",
-    "v3-emb-chosen-capB.cov.chosen.rm",
+    "v3-emb-random-capB.ec14.p1.rm",
+    "v3-emb-random-capB.ct.14x20.rm",
+    "v3-emb-random-capB.ct.16x80.rm",
+    "v3-emb-chosen-capB.ec14.p1.rm",
+    "v3-emb-chosen-capB.ct.14x20.rm",
+    "v3-emb-chosen-capB.ct.16x80.rm",
     "v3-emb-gauss-capB.cov.gauss.rm",
     "v3-cov-sinv-tail.cov.sinv-tail.rm",
     "v3-cov-iso-tail.cov.iso-tail.rm"
@@ -409,7 +431,8 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-random-capA.opt.hash-random.rm"
+    "v3-emb-random-capA.ct.14x20.rm",
+    "v3-emb-random-capA.ct.16x80.rm"
    ],
    "std": false,
    "x": [
@@ -443,7 +466,8 @@
    ],
    "missing": [
     "Run 3: the menu kept whole plus the embedding hash at f",
-    "Run 3: the menu kept whole plus AXOL1TL at f (two points, 1 and 5 %)"
+    "Run 3: the menu kept whole plus AXOL1TL at f (two points, 1 and 5 %)",
+    "embedding hashing in the additive mode is not measured at the 14 x 20 cell; drawn at the earlier 22 x 80 cell"
    ],
    "note": "The menu kept whole plus novelty at f, (100 + f) % of the rate. Only the HL-LHC additive curve is in the explorer."
   },
@@ -461,7 +485,8 @@
     "r3-menu-raised.0",
     "r3-emb-C.0",
     "v3-menu-raised.0",
-    "v3-emb-ladder.sa"
+    "v3-emb-ladder.c14x20.sa",
+    "v3-emb-ladder.c16x80.sa"
    ],
    "std": true,
    "x": [
@@ -483,7 +508,9 @@
    "sel": [
     "v3-menu-hash.unq.step1.menu-menu-hash.unique-raised",
     "v3-menu-hash.unq.step1.menu-menu-hash.unique-full",
-    "v3-emb-chosen-capB.unq.step5.emb-hash-chosen-cap-convB.unique-full"
+    "v3-emb-chosen-capB.ec14.p1.un",
+    "v3-emb-chosen-capB.ct.14x20.un",
+    "v3-emb-chosen-capB.ct.16x80.un"
    ],
    "std": false,
    "x": [
@@ -506,7 +533,9 @@
    ],
    "sel": [
     "v3-menu-hash.0",
-    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.sa"
+    "v3-emb-chosen-capB.ec14.p1.sa",
+    "v3-emb-chosen-capB.ct.14x20.sa",
+    "v3-emb-chosen-capB.ct.16x80.sa"
    ],
    "std": false,
    "x": [
@@ -526,8 +555,9 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.rm",
-    "v3-emb-chosen-capB.unq.step5.emb-hash-chosen-cap-convB.rejocc"
+    "v3-emb-chosen-capB.ec14.p1.rm",
+    "v3-emb-chosen-capB.ct.14x20.rm",
+    "v3-emb-chosen-capB.ct.16x80.rm"
    ],
    "std": false,
    "x": [
@@ -549,7 +579,8 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-random-capA.opt.hash-random.rm"
+    "v3-emb-random-capA.ct.14x20.rm",
+    "v3-emb-random-capA.ct.16x80.rm"
    ],
    "std": false,
    "x": [
@@ -571,7 +602,8 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-ladder.sa"
+    "v3-emb-ladder.c14x20.sa",
+    "v3-emb-ladder.c16x80.sa"
    ],
    "std": false,
    "x": [
@@ -698,7 +730,8 @@
     "HL"
    ],
    "sel": [
-    "v3-emb-ladder.sa"
+    "v3-emb-ladder.c14x20.sa",
+    "v3-emb-ladder.c16x80.sa"
    ],
    "std": false,
    "x": [
@@ -722,7 +755,8 @@
    "sel": [
     "v3-menu-raised.0",
     "v3-ae.sa",
-    "v3-emb-ladder.sa"
+    "v3-emb-ladder.c14x20.sa",
+    "v3-emb-ladder.c16x80.sa"
    ],
    "std": true,
    "x": [
@@ -772,7 +806,8 @@
     "r3-menu-raised.0",
     "r3-axol1tl.0",
     "r3-emb-C.0",
-    "v3-emb-ladder.sa",
+    "v3-emb-ladder.c14x20.sa",
+    "v3-emb-ladder.c16x80.sa",
     "v3-ae.sa"
    ],
    "std": true,

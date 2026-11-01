@@ -148,7 +148,7 @@
    "sel": [
     "r3-axo-repr-gauss.nh.nohaa-axo-gauss-mu",
     "r3-emb-knn.den",
-    "v3-emb-gmm-capA.opt.gmm-K8.sa"
+    "v3-emb-gmm-capA.onl.gmm-K8.m64.sa"
    ],
    "std": true,
    "x": [
@@ -172,8 +172,11 @@
    ],
    "sel": [
     "r3-axo-repr-hash.imp.white.b16-T20.mean-log",
+    "r3-softmax-random.sph.12x20.sa",
+    "v3-softmax-random-emb.sph.8x20.sa",
     "r3-emb-C.r3c.standalone",
-    "v3-emb-ladder.c16x80.sa",
+    "v3-emb-random-capA.ct.14x20.sa",
+    "v3-emb-random-capA.ct.16x80.sa",
     "v3-cov-sinv-tail.cov.sinv-tail.sa"
    ],
    "std": true,
@@ -184,8 +187,6 @@
    "reference_on": [],
    "missing": [
     "autoencoder or AXOL1TL latent, HL-LHC: not run on HL-LHC",
-    "classifier output, Run 3: not run on Run 3",
-    "classifier output, HL-LHC: hashing on the classifier output has no standalone curve",
     "contrastive embedding, covariance planes, Run 3: not run on Run 3"
    ]
   },
@@ -199,7 +200,8 @@
    ],
    "sel": [
     "r3-emb-D-csel.0",
-    "v3-emb-chosen-capB.cov.chosen.sa"
+    "v3-emb-chosen-capB.ec14.p1.sa",
+    "v3-emb-chosen-capB.ct.16x80.sa"
    ],
    "std": true,
    "x": [
@@ -228,9 +230,11 @@
     "v3-backfit.unq.step5.menu-m1-backfit.unique-full",
     "v3-backfit.unq.step5.menu-m1-backfit.unique-raised",
     "r3-emb-C.r3c.unique-full",
-    "v3-emb-random-capB.unq.step5.emb-hash-random-convB.unique-full",
+    "v3-emb-random-capB.ec14.p1.un",
+    "v3-emb-random-capB.ct.16x80.un",
     "r3-emb-C.r3c.unique-same",
-    "v3-emb-chosen-capB.unq.step5.emb-hash-chosen-cap-convB.unique-full"
+    "v3-emb-chosen-capB.ec14.p1.un",
+    "v3-emb-chosen-capB.ct.16x80.un"
    ],
    "std": true,
    "x": [
@@ -255,8 +259,10 @@
    "sel": [
     "v3-tailq.grid.tailq-hash",
     "r3-emb-C.r3c.rejocc",
-    "v3-emb-random-capA.opt.hash-random.rm",
-    "v3-emb-chosen-capB.opt.hash-chosen-cap-convB.rm"
+    "v3-emb-random-capA.ct.14x20.rm",
+    "v3-emb-random-capA.ct.16x80.rm",
+    "v3-emb-chosen-capB.ec14.p1.rm",
+    "v3-emb-chosen-capB.ct.16x80.rm"
    ],
    "std": true,
    "x": [
@@ -289,7 +295,8 @@
    "reference_on": [],
    "missing": [
     "hashing on the contrastive embedding, Run 3: not run on Run 3",
-    "autoencoder, Run 3: not run on Run 3"
+    "autoencoder, Run 3: not run on Run 3",
+    "embedding hashing in the additive mode is not measured at the 14 x 20 cell; drawn at the earlier 22 x 80 cell"
    ]
   },
   {
@@ -304,9 +311,11 @@
     "r3-tailq.0",
     "v3-tailq.0",
     "r3-emb-C.r3c.standalone",
-    "v3-emb-ladder.c16x80.sa",
+    "v3-emb-random-capA.ct.14x20.sa",
+    "v3-emb-random-capA.ct.16x80.sa",
     "r3-emb-D-csel.0",
-    "v3-emb-chosen-capB.cov.chosen.sa"
+    "v3-emb-chosen-capB.ec14.p1.sa",
+    "v3-emb-chosen-capB.ct.16x80.sa"
    ],
    "std": true,
    "x": [
