@@ -1342,7 +1342,8 @@
      },
      "twin": false,
      "key": "hl.std.standard-trigger-loosened-or-raised",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#000000"
     },
     {
      "id": "hashing 22x80, menu inputs, random planes through the origin",
@@ -2224,7 +2225,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-through-origin-22-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "hashing, menu inputs, chosen planes",
@@ -3107,7 +3109,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-chosen-known-signals",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "GMM K 8, menu inputs",
@@ -3989,7 +3992,8 @@
      },
      "twin": false,
      "key": "hl.menu.gaussian-mixture",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "classifier on the menu inputs",
@@ -4871,7 +4875,8 @@
      },
      "twin": false,
      "key": "hl.menu.supervised-classifier",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "hashing, menu inputs, random planes (tail offsets)",
@@ -5754,7 +5759,8 @@
      },
      "twin": false,
      "key": "hl.menu.tail-quantile-cells",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "hashing, menu inputs, menu-threshold planes",
@@ -6637,7 +6643,8 @@
      },
      "twin": false,
      "key": "hl.menu.cells-menu-thresholds",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "RBM free energy, menu inputs",
@@ -7519,7 +7526,8 @@
      },
      "twin": false,
      "key": "hl.menu.boltzmann-machine",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "RBM (PCD) free energy, menu inputs",
@@ -8401,7 +8409,8 @@
      },
      "twin": false,
      "key": "hl.menu.boltzmann-machine-persistent",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "boosted planes, menu inputs",
@@ -9284,7 +9293,8 @@
      },
      "twin": false,
      "key": "hl.menu.boosted-planes",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#7f8c1a"
     },
     {
      "id": "hashing 14x20, menu inputs, covariance-guided planes",
@@ -10167,7 +10177,8 @@
      },
      "twin": false,
      "key": "hl.menu.covariance-guided-planes-14-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#0f5f73"
     },
     {
      "id": "hashing 16x80, menu inputs, covariance-guided planes",
@@ -11050,7 +11061,8 @@
      },
      "twin": false,
      "key": "hl.menu.covariance-guided-planes-16-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "menu:t3SA_greedy14x20",
@@ -11933,7 +11945,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-chosen-one-by-one-14-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "menu:t3SA_backfit14x20",
@@ -12816,7 +12829,8 @@
      },
      "twin": false,
      "key": "hl.menu.chosen-planes-refitted-14-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "menu:t3SA_joint14x20",
@@ -13699,7 +13713,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-chosen-jointly-14-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "menu:t3SA_boost14x20",
@@ -14582,7 +14597,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-boosted-across-tables-14-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "menu:t3SA_greedy16x80",
@@ -15465,7 +15481,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-chosen-one-by-one-16-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "menu:t3SA_backfit16x80",
@@ -16348,7 +16365,8 @@
      },
      "twin": false,
      "key": "hl.menu.chosen-planes-refitted-16-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "menu:t3SA_joint16x80",
@@ -17231,7 +17249,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-chosen-jointly-16-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "menu:t3SA_boost16x80",
@@ -18114,7 +18133,8 @@
      },
      "twin": false,
      "key": "hl.menu.planes-boosted-across-tables-16-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#7f8c1a"
     },
     {
      "id": "hashing 14x20, embedding, random planes",
@@ -20790,7 +20810,8 @@
       }
      },
      "key": "hl.emb.hashing-random-planes-14-x-20",
-     "cls": "proposed"
+     "cls": "proposed",
+     "col": "#d9480f"
     },
     {
      "id": "hashing 14x20, embedding, chosen planes (2581 SA)",
@@ -23467,7 +23488,8 @@
       }
      },
      "key": "hl.emb.planes-chosen-known-signals-14-x-20",
-     "cls": "proposed"
+     "cls": "proposed",
+     "col": "#f59f00"
     },
     {
      "id": "Gaussian density, embedding",
@@ -24349,7 +24371,8 @@
      },
      "twin": false,
      "key": "hl.emb.gaussian.a",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#8c6d46"
     },
     {
      "id": "GMM K 8, embedding",
@@ -25231,7 +25254,8 @@
      },
      "twin": false,
      "key": "hl.emb.gaussian-mixture.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#0f5f73"
     },
     {
      "id": "kNN k 128, embedding",
@@ -26113,7 +26137,8 @@
      },
      "twin": false,
      "key": "hl.emb.nearest-neighbours.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "hashing 16x80, embedding, random planes",
@@ -26995,7 +27020,8 @@
      },
      "twin": false,
      "key": "hl.emb.hashing-random-planes-16-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "hashing 14x20, embedding, covariance-guided planes",
@@ -27878,7 +27904,8 @@
      },
      "twin": false,
      "key": "hl.emb.covariance-guided-planes-14-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "hashing 16x80, embedding, covariance-guided planes",
@@ -28761,7 +28788,8 @@
      },
      "twin": false,
      "key": "hl.emb.covariance-guided-planes-16-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "kernel density b 12, embedding",
@@ -29643,7 +29671,8 @@
      },
      "twin": false,
      "key": "hl.emb.kernel-density-12-bins.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "kernel density b 18, embedding",
@@ -30525,7 +30554,8 @@
      },
      "twin": false,
      "key": "hl.emb.kernel-density-18-bins.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "kernel density b 22, embedding",
@@ -31407,7 +31437,8 @@
      },
      "twin": false,
      "key": "hl.emb.kernel-density-22-bins.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "emb:hash14x20n_random",
@@ -32289,7 +32320,8 @@
      },
      "twin": true,
      "key": "hl.emb.hashing-random-planes-14-x-20.a",
-     "cls": "proposed"
+     "cls": "proposed",
+     "col": "#d9480f"
     },
     {
      "id": "emb:hash16x80n_random",
@@ -33171,7 +33203,8 @@
      },
      "twin": true,
      "key": "hl.emb.hashing-random-planes-16-x-80.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "RS-Hash s 1000, embedding",
@@ -34053,7 +34086,8 @@
      },
      "twin": false,
      "key": "hl.emb.rs-hash",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "emb:rshash_s1000_A_loo",
@@ -34935,7 +34969,8 @@
      },
      "twin": true,
      "key": "hl.emb.rs-hash.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "RS-Hash s 100000, embedding",
@@ -35817,7 +35852,8 @@
      },
      "twin": false,
      "key": "hl.emb.rs-hash-large-sample",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#7f8c1a"
     },
     {
      "id": "half-space trees, embedding",
@@ -36699,7 +36735,8 @@
      },
      "twin": false,
      "key": "hl.emb.half-space-trees",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#0f5f73"
     },
     {
      "id": "isolation forest, embedding",
@@ -37581,7 +37618,8 @@
      },
      "twin": false,
      "key": "hl.emb.isolation-forest",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "xStream, embedding",
@@ -38463,7 +38501,8 @@
      },
      "twin": false,
      "key": "hl.emb.xstream",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "S-sphere ssph14x20",
@@ -39345,7 +39384,8 @@
       }
      },
      "key": "hl.sphere.hashing-random-planes-14-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "S-sphere ssph12x80",
@@ -40227,7 +40267,8 @@
       }
      },
      "key": "hl.sphere.hashing-random-planes-12-x-80",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "S-sphere ssph8x20",
@@ -41109,7 +41150,8 @@
       }
      },
      "key": "hl.sphere.hashing-random-planes-8-x-20",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "S-sphere gauss",
@@ -41991,7 +42033,8 @@
       }
      },
      "key": "hl.sphere.gaussian-square-root-sphere",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "BASELINE: classifier on the embedding",
@@ -42871,7 +42914,8 @@
      },
      "twin": false,
      "key": "hl.clf.supervised-classifier-embedding",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "classifier, same inputs and network as the embedding, trained from scratch (S)",
@@ -45545,7 +45589,8 @@
       }
      },
      "key": "hl.clf.supervised-classifier-from-scratch",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#8a4fc0"
     },
     {
      "id": "classifier, the embedding encoder fine-tuned end to end (T)",
@@ -46428,7 +46473,8 @@
      },
      "twin": false,
      "key": "hl.clf.supervised-classifier-encoder-fine-tuned",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     }
    ],
    "block": "WEIGHTED-FILL N_LB 19,630,647 (capped stage 65ea6bad), HL-LHC, 19 never-trained Tier-C classes, haa not among them",
@@ -49075,7 +49121,8 @@
       }
      },
      "key": "r3.std.standard-trigger-loosened-additive-or-raised-rate-neutral",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#000000"
     },
     {
      "id": "standard loosened by one factor, A beside (factor set on the whole block)",
@@ -49332,7 +49379,8 @@
      "tint": false,
      "twin": true,
      "key": "r3.std.standard-trigger-loosened-additive-or-raised-rate-neutral.a",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#000000"
     },
     {
      "id": "standard loosened, factor fixed on the fit half, read on the held-out half (achieved f beside)",
@@ -49669,7 +49717,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.std.standard-trigger-loosening-carried-to-held-out-half",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "menu_prescaled|menu [r3-menu-prescaled]",
@@ -51436,7 +51485,8 @@
       }
      },
      "key": "r3.std.floor-menu-cms-thresholds-random-prescale-its-rejects.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "hash_menu|menu [r3-menu-hash-T6]",
@@ -51778,7 +51828,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.cells-menu-thresholds.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "one-table menu hash, not a tree row [r3-menu-hash]",
@@ -52120,7 +52171,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.cells-menu-thresholds-one-table.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "hash_random|menu [r3-tailq]",
@@ -52462,7 +52514,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.tail-quantile-cells",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "hash_chosen|menu [r3-csel]",
@@ -52804,7 +52857,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.planes-chosen-known-signals",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "hash_boost|menu [r3-boost]",
@@ -53146,7 +53200,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.boosted-planes",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "hash_backfit|menu [r3-backfit-conv]",
@@ -53488,7 +53543,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.chosen-planes-refitted",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "two sweeps, not the tree row [r3-backfit-2sweeps]",
@@ -53830,7 +53886,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.chosen-planes-refitted-twice",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#7f8c1a"
     },
     {
      "id": "gauss|menu [r3-gauss-38-unit]",
@@ -54171,7 +54228,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.gaussian-38-inputs-unit-covariance.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#0f5f73"
     },
     {
      "id": "gauss|menu, full covariance [r3-gauss-38]",
@@ -54512,7 +54570,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.gaussian-38-inputs-full-covariance.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "gauss|menu, 57 inputs [r3-gauss-57-unit]",
@@ -54853,7 +54912,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.gaussian-57-inputs-unit-covariance.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "gauss|menu, 57 inputs [r3-gauss-57]",
@@ -55194,7 +55254,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.gaussian-57-inputs-full-covariance.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "est_part@unmeasured [r3-iforest-38]",
@@ -55535,7 +55596,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.isolation-forest-100-trees-256-events.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "random partitions isolation forest, 38 ET + eta menu inputs (3 forest seeds), 2607 (A only)",
@@ -55672,7 +55734,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.isolation-forest.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "random partitions half-space trees, 38 ET + eta menu inputs (3 forest seeds), 2607 (A only)",
@@ -55809,7 +55872,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.half-space-trees.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "random partitions RS-Hash s 1000, 38 ET + eta menu inputs (3 forest seeds), 2607 (A only)",
@@ -55946,7 +56010,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.rs-hash.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "random partitions xStream, 38 ET + eta menu inputs (3 forest seeds), 2607 (A only)",
@@ -56083,7 +56148,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.menu.xstream.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "hashing: embedding hash, random planes, 16 x 20, MEAN-log (clean d16 leave-one-out encoders), cut on the odd half [r3compB-C]",
@@ -58598,7 +58664,8 @@
       }
      },
      "key": "r3.emb.hashing-random-planes-16-x-20",
-     "cls": "proposed"
+     "cls": "proposed",
+     "col": "#d9480f"
     },
     {
      "id": "hashing: embedding hash, random planes, 16 x 20, MEAN-log (clean d16 leave-one-out encoders) [r3comp-C]",
@@ -59079,7 +59146,8 @@
      "tint": false,
      "twin": true,
      "key": "r3.emb.hashing-random-planes-16-x-20.a",
-     "cls": "proposed"
+     "cls": "proposed",
+     "col": "#d9480f"
     },
     {
      "id": "hashing: embedding hash, random planes, 16 x 20, MEAN-log (clean d16 leave-one-out encoders) [r3comp-C] B (2679)",
@@ -59156,7 +59224,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.hashing-random-planes-16-x-20-first-held-out-reading",
-     "cls": "proposed"
+     "cls": "proposed",
+     "col": "#d9480f"
     },
     {
      "id": "random reference of D [r3-emb-D-ref]",
@@ -59497,7 +59566,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.random-planes-reference-chosen-planes",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#7f8c1a"
     },
     {
      "id": "hash_chosen|emb [r3-emb-D-csel]",
@@ -59839,7 +59909,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.planes-chosen-known-signals",
-     "cls": "proposed"
+     "cls": "proposed",
+     "col": "#f59f00"
     },
     {
      "id": "sinv_tail [r3-65units-sinv_tail]",
@@ -60181,7 +60252,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.covariance-guided-planes.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#0f5f73"
     },
     {
      "id": "iso_tail [r3-65units-iso_tail]",
@@ -60523,7 +60595,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.tail-offset-planes.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "Gaussian: full covariance on the clean d16 leave-one-out embedding, fit on the even half, cut on the odd half [r3compB-gauss]",
@@ -61004,7 +61077,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.gaussian",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#8c6d46"
     },
     {
      "id": "Gaussian: full covariance on the clean d16 leave-one-out embedding [r3comp-gauss]",
@@ -61485,7 +61559,8 @@
      "tint": false,
      "twin": true,
      "key": "r3.emb.gaussian.a",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#8c6d46"
     },
     {
      "id": "Gaussian: full covariance on the clean d16 leave-one-out embedding [r3comp-gauss] B (2679)",
@@ -61562,7 +61637,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.gaussian-first-held-out-reading",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#8c6d46"
     },
     {
      "id": "gmm|emb [r3-emb-gmm]",
@@ -61903,7 +61979,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.gaussian-mixture.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "knn|emb [r3-emb-knn]",
@@ -62244,7 +62321,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.nearest-neighbours.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "random partitions isolation forest, embedding d16 (3 encoder seeds), 2607 (A only)",
@@ -62381,7 +62459,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.isolation-forest.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "random partitions half-space trees, embedding d16 (3 encoder seeds), 2607 (A only)",
@@ -62518,7 +62597,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.half-space-trees.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "random partitions RS-Hash s 1000, embedding d16 (3 encoder seeds), 2607 (A only)",
@@ -62655,7 +62735,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.rs-hash.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "random partitions xStream, embedding d16 (3 encoder seeds), 2607 (A only)",
@@ -62792,7 +62873,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.emb.xstream.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "AXOL1TL v5, the released emulator score (reference), cut on the odd half [r3compB-axol1tl]",
@@ -64699,7 +64781,8 @@
       }
      },
      "key": "r3.axo.axol1tl-score-released-emulator",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#4f7f8c"
     },
     {
      "id": "AXOL1TL v5, the released emulator score (reference) [r3comp-axol1tl]",
@@ -65180,7 +65263,8 @@
      "tint": false,
      "twin": true,
      "key": "r3.axo.axol1tl-score-released-emulator.a",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#4f7f8c"
     },
     {
      "id": "AXOL1TL v5, the released emulator score (reference) [r3comp-axol1tl] B (2679)",
@@ -65257,7 +65341,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.axol1tl-score-first-held-out-reading",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#4f7f8c"
     },
     {
      "id": "hash|mu [r3-65units-axo_hash_mu]",
@@ -65598,7 +65683,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.hashing-latent-mean.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "hash|e1 [r3-65units-axo_hash_e1]",
@@ -65939,7 +66025,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.hashing-encoder-output-e1.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#7f8c1a"
     },
     {
      "id": "gauss|mu [r3-65units-axo_gauss_mu]",
@@ -66280,7 +66367,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.gaussian-latent-mean.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#0f5f73"
     },
     {
      "id": "gauss|mu [r3-65units-axo_gauss_floor1e-6_mu]",
@@ -66621,7 +66709,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.gaussian-latent-mean-variance-floor.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2a6fdb"
     },
     {
      "id": "gauss|e1 [r3-65units-axo_gauss_e1]",
@@ -66962,7 +67051,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.gaussian-e1.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#2b9e6b"
     },
     {
      "id": "gauss|e1 [r3-65units-axo_gauss_floor1e-6_e1]",
@@ -67303,7 +67393,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.gaussian-e1-variance-floor.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#c43c8a"
     },
     {
      "id": "gmm|mu [r3-65units-axo_gmm_mu]",
@@ -67644,7 +67735,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.gaussian-mixture-latent-mean.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#1aa3b8"
     },
     {
      "id": "gmm|e1 [r3-65units-axo_gmm_e1]",
@@ -67985,7 +68077,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.gaussian-mixture-e1.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#5c8f2b"
     },
     {
      "id": "knn|mu [r3-65units-axo_knn_mu]",
@@ -68326,7 +68419,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.nearest-neighbours-latent-mean.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#3d5a99"
     },
     {
      "id": "knn|e1 [r3-65units-axo_knn_e1]",
@@ -68667,7 +68761,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.axo.nearest-neighbours-e1.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#228b7a"
     },
     {
      "id": "hash_menu|sphere, read as cells at thresholds on the sphere (Dx4) [r3-sphere-tailq]",
@@ -68855,7 +68950,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.sphere.cells-thresholds-classifier-output.a",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#6b6f78"
     },
     {
      "id": "hash_chosen|sphere [r3-sphere-chosen]",
@@ -70472,7 +70568,8 @@
       }
      },
      "key": "r3.sphere.planes-chosen-known-signals",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#7f8c1a"
     },
     {
      "id": "random planes on the classifier sphere (2680)",
@@ -71816,7 +71913,8 @@
       }
      },
      "key": "r3.sphere.random-planes-classifier-output",
-     "cls": "plain"
+     "cls": "plain",
+     "col": "#0f5f73"
     },
     {
      "id": "classifier reference, d16 embedding (3 encoders x 3 trainings, 2684)",
@@ -72181,7 +72279,8 @@
      "tint": false,
      "twin": false,
      "key": "r3.clf.supervised-classifier-embedding",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#a0607a"
     },
     {
      "id": "classifier reference, 57 Level-1 inputs (5 folds x 3 trainings)",
@@ -74694,7 +74793,8 @@
       }
      },
      "key": "r3.clf.supervised-classifier-57-level-1-inputs",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#8a4fc0"
     },
     {
      "id": "classifier reference, 57 Level-1 inputs (5 folds x 3 trainings), A beside",
@@ -75173,7 +75273,8 @@
      "tint": false,
      "twin": true,
      "key": "r3.clf.supervised-classifier-57-level-1-inputs.a",
-     "cls": "comparative"
+     "cls": "comparative",
+     "col": "#8a4fc0"
     }
    ],
    "block": "cmsl1t-subLB, N_block 8355050",
@@ -75198,5 +75299,5 @@
   "reports/cmsl1t_l1/two_footings_2026-11-03/fold_2708.json": "54577156a0 2026-11-04"
  },
  "built_by": "tools/writeup_numbers_table.py",
- "built_from": "cb34acb840 2026-11-07"
+ "built_from": "a633de47fe 2026-11-07"
 }
