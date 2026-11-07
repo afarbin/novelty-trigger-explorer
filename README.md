@@ -50,3 +50,35 @@ The list on the left holds the talk steps. Click a step to redraw it. You can sa
 figures, as files. These are kept in your browser only and are never sent anywhere.
 
 See the NOTICE beside this file for which inputs are simulation and which are CMS Run-3 data.
+
+## The numbers table (numbers.html)
+
+One screen with every method at every budget. The table is also the control for the plots:
+
+- **Click a method** to draw its capture curve against the unique background rate. The standard trigger (black) and the
+  classifier reference (dashed) are always drawn. A thick bar is the statistical error; a thin one is the spread over trainings.
+- **Click a budget in the header** to draw the per-process bars at that budget, one panel per budget, and to mark it on the curves.
+- **Processes** picks physics processes by group or one by one: on HL-LHC the held-out, dark-photon and sealed groups and
+  their 13 channels (second samples pooled into their parents by probe count, a fold still to be ruled); on Run 3 the five
+  classifier folds and their 19 families. The table and the curves then show the mean over the selected processes, with the
+  error rule stated beside them. H to aa to 4b on Run 3 and the H to invisible control on HL-LHC are drawn apart and are in no mean.
+- The label column stays in place while the numbers scroll left and right. The cell colour runs from white to red, lowest to
+  highest in its column within the current view.
+- The selection is kept in the address after the #, so a view can be shared as a link.
+- **The best in each group is underlined.** Within each group of rows (the reference rows, and each level of the table), at
+  each budget and footing, the highest unique capture among the rows in view that are cut the same way (held-out half, or whole
+  block) is underlined; a value within the combined statistical error of it has a dotted underline. A group with one such row
+  is not marked. With processes selected, the means over the selection are ranked the same way.
+- **The Run 3 standard trigger is the loosened menu** (since 2026-11-07): the Level-1 menu with its thresholds lowered from the
+  CMS menu by one factor until it adds the budget, cut on the held-out half, the same convention as the HL-LHC standard trigger;
+  in the rate-neutral footing the menu is raised to give the budget up. It is the black reference on every Run 3 curve and bar,
+  per process in the additive footing. The menu at CMS thresholds with a random prescale of its rejects is kept only as a
+  labelled floor row; it is not the standard.
+
+Row classes (`numbers_row_classes.json` beside the builder, one place to change them):
+
+| class | HL-LHC | Run 3 |
+|---|---|---|
+| proposed: the hash density trigger | hashing, random planes, 14 x 20 on the embedding (held-out and whole-block cut); planes chosen with known signals, 14 x 20 on the embedding (targeted use) | hashing, random planes, 16 x 20 on the embedding (held-out, whole-block and first held-out reading); planes chosen with known signals on the embedding |
+| comparison | standard trigger; supervised classifier, from scratch (S); Gaussian on the embedding | standard trigger (both cuts); AXOL1TL score (all three readings); Gaussian on the embedding (all three readings); supervised classifier, 57 Level-1 inputs (both cuts); supervised classifier on the embedding |
+| always drawn | standard trigger; supervised classifier, from scratch | standard trigger; supervised classifier, 57 Level-1 inputs |

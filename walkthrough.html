@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selector Walkthrough</title>
+<meta name="description" content="A short walk through the novelty-trigger results in the interactive strategy selector, one preset step at a time.">
+<style>
+:root{--bg:#fbfaf7;--panel:#ffffff;--ink:#1d2328;--muted:#5d6670;--line:#cfcac0;--accent:#2f6f9f;--sel:#fff1cf;--selb:#c98a00}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15181b;--panel:#1d2125;--ink:#e8e6e1;--muted:#a3abb3;--line:#3b424a;--accent:#7fb2dc;--sel:#3a3220;--selb:#e2b04a}}
+:root[data-theme="dark"]{--bg:#15181b;--panel:#1d2125;--ink:#e8e6e1;--muted:#a3abb3;--line:#3b424a;--accent:#7fb2dc;--sel:#3a3220;--selb:#e2b04a}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{display:grid;grid-template-columns:minmax(280px,380px) minmax(0,1fr);gap:14px;padding:12px 16px;height:100vh}
+.side{display:flex;flex-direction:column;min-height:0}
+h1{font-size:19px;margin:2px 0 4px}
+.small{font-size:12px;color:var(--muted)}
+ol.nav{list-style:none;margin:8px 0;padding:0;display:flex;flex-wrap:wrap;gap:4px}
+ol.nav button{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:6px;padding:2px 8px;cursor:pointer;min-width:30px}
+ol.nav button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow:auto;flex:1 1 auto;min-height:0}
+.card h2{font-size:16px;margin:0 0 6px}
+.card p{margin:0 0 10px}
+.go{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.go button{font:inherit;font-size:13px;border:1px solid var(--selb);background:var(--sel);color:var(--ink);border-radius:6px;padding:4px 10px;cursor:pointer}
+.go button.on{outline:2px solid var(--selb)}
+.pn{display:flex;justify-content:space-between;margin-top:8px}
+.pn button{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:6px;padding:4px 12px;cursor:pointer}
+.pn button:disabled{opacity:.4;cursor:default}
+iframe{width:100%;height:100%;border:1px solid var(--line);border-radius:8px;background:#fff}
+a{color:var(--accent)}
+@media (max-width:900px){
+  .wrap{grid-template-columns:1fr;height:auto}
+  .card{flex:none}
+  iframe{height:80vh}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="side">
+  <h1>Novelty trigger: a walkthrough</h1>
+  <div class="small">Each step opens the strategy selector with a preset; every plot and table there stays live, so a step is a starting point, not a picture. <a id="full" href="selector.html" target="_blank" rel="noopener">Open the selector on its own page</a>.</div>
+  <ol class="nav" id="nav"></ol>
+  <div class="card" id="step"></div>
+  <div class="pn"><button id="prev">Previous</button><button id="next">Next</button></div>
+</div>
+<iframe id="sel" title="strategy selector" src="about:blank"></iframe>
+</div>
+<script>
+const STEPS = [{"title":"The assumption ladder","go":[["ladder","Show the ladder"]],"text":"Every way of picking new events assumes something about what new physics looks like. Read down the ladder and each rung adds one piece of information: the menu's own thresholds, then how common an event is in the background, then signal examples that place the hashing planes, then a learned representation. The plots show what the standard trigger and the novelty trigger keep together, for signal families no part of the trigger was trained on; Run 3 recorded data on the left, HL-LHC simulation on the right."},{"title":"The unique rate","go":[["unique","Show the unique capture"]],"text":"The budget f is the unique rate of the novelty trigger: background it accepts that the standard trigger rejects. The unique capture is the signal it keeps that the standard does not. On HL-LHC f is a percent of the 7.5 kHz HLT output; on Run 3 a percent of the recorded Level-1 accept rate."},{"title":"Two footings","go":[["footings","Show the rate-neutral footing"],["ladder","Back to additive"]],"text":"Additive: the standard trigger stays untouched at its full rate and the novelty trigger adds f on its rejects. Rate-neutral: the standard gives f of its rate to the novelty trigger, and the total rate does not change. The footing toggle switches between the two for the next curve added; each curve on the plots keeps its own, and brings its own standard and classifier references."},{"title":"Standard and loosened menu","go":[["menu","Show the loosened menu"]],"text":"The fair comparison for an added rate is the standard menu itself, loosened: every threshold lowered by one common factor until the menu adds the same unique rate f. It is the black curve in unique mode on the additive footing. Hashing with cells at the menu thresholds uses the same physics knowledge, placed as plane positions instead of a cut."},{"title":"Methods on the menu inputs","go":[["menuinputs","Show the menu-input methods"]],"text":"With only the quantities the trigger already computes, and the background to learn how common an event is: hashing with random planes and with cells at the thresholds, one Gaussian, a Gaussian mixture and a restricted Boltzmann machine. No signal is used by any of them."},{"title":"The contrastive embedding","go":[["embedding","Show the embedding methods"]],"text":"A representation learned by contrast between background and signal families, with each scored family left out of the training of its encoder. On that embedding the same density estimates compete with hashing; the AXOL1TL autoencoder is shown beside them as the trigger running at CMS today. This step is in convention A, the cut on the whole background, where the density estimates on the HL-LHC embedding were measured."},{"title":"Hashing and the Gaussian","go":[["gauss","Show hashing against the Gaussian"]],"text":"The same inputs and the same information, two estimates of how rare an event is: a single Gaussian fitted to the background, against counts in the cells of random hashing planes. Shown on the embedding, as unique capture on the additive footing, in convention A, where both were measured on HL-LHC."},{"title":"RS-Hash and random partitions","go":[["rshash","Show RS-Hash and the partitions"]],"text":"Random partitions cut the space into cells with no learning at all: RS-Hash, isolation forests and half-space trees, on the embedding, beside hashing with random planes, on the rate-neutral footing."},{"title":"The classifier reference","go":[["classifier","Show the classifier reference"]],"text":"A supervised classifier trained on the families it is scored on knows the answer and sets the reference: the grey dashed curve on every plot. Hashing with planes chosen on known signals and with random planes is shown beside it; the gap is what the knowledge of the signal is worth."},{"title":"The gains at 5, 10, 50 and 100 %","go":[["gain5","f = 5 %"],["gain10","f = 10 %"],["gain50","f = 50 %"],["gain100","f = 100 %"]],"text":"The unique capture of the leading strategies at four budgets, on the additive footing, convention B. The table under the plots prints each value with its statistical error, the spread over encoder trainings beside it, the block and the effective number of background crossings behind the cut; H to aa to 4b is shown apart, never in the mean."}];
+let I = 0, T = null;
+const $ = s => document.querySelector(s);
+function go(tok){ T = tok; const u = 'selector.html#' + tok; const f = $('#sel');
+  f.src = u;
+  $('#full').href = u; draw(); }
+function draw(){
+  const s = STEPS[I];
+  $('#nav').innerHTML = STEPS.map((x, k) => '<li><button data-k="' + k + '" class="' + (k === I ? 'on' : '') + '" title="' + x.title + '">' + (k + 1) + '</button></li>').join('');
+  $('#nav').querySelectorAll('button').forEach(b => b.onclick = () => show(+b.dataset.k));
+  $('#step').innerHTML = '<div class="small">Step ' + (I + 1) + ' of ' + STEPS.length + '</div><h2>' + s.title + '</h2><p>' + s.text + '</p><div class="go">' +
+    s.go.map(([t, l]) => '<button data-t="' + t + '" class="' + (t === T ? 'on' : '') + '">' + l + '</button>').join('') + '</div>';
+  $('#step').querySelectorAll('.go button').forEach(b => b.onclick = () => go(b.dataset.t));
+  $('#prev').disabled = I === 0; $('#next').disabled = I === STEPS.length - 1;
+}
+function show(k){ I = Math.max(0, Math.min(STEPS.length - 1, k)); history.replaceState(null, '', '#' + (I + 1)); go(STEPS[I].go[0][0]); }
+$('#prev').onclick = () => show(I - 1); $('#next').onclick = () => show(I + 1);
+window.walkTest = {show, go, steps: () => STEPS, cur: () => [I, T]};
+show((parseInt(location.hash.slice(1)) || 1) - 1);
+</script>
+</body>
+</html>
